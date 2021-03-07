@@ -6,9 +6,6 @@ name: Node.js CI
 on:
     push:
         branches: [dev]
-defaults:
-    run:
-        working-directory: server
 
         jobs:
         build:
@@ -24,5 +21,4 @@ defaults:
                   uses: actions/setup-node@v1
                   with:
                       node-version: ${{ matrix.node-version }}
-                - run: cd server
-                - run: npm i
+                - run: cd server && npm install
