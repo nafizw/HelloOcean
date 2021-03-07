@@ -10,8 +10,8 @@ app.get("/api", (req, res) => {
 app.get("/api/test", (req, res) => {
     res.send("API is running.. test route");
 });
-app.get("/api/xxx", (req, res) => {
-    res.send("xxx xxx xxx");
+app.get("/api/tanji-tania", (req, res) => {
+    res.send("purai joss");
 });
 
 const PORT = process.env.PORT || 5000;
