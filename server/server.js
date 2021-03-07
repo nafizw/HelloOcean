@@ -10,6 +10,9 @@ app.get("/api", (req, res) => {
 app.get("/api/test", (req, res) => {
     res.send("API is running.. test route");
 });
+app.get("/api/xxx", (req, res) => {
+    res.send("xxx xxx xxx");
+});
 
 const PORT = process.env.PORT || 5000;
 
