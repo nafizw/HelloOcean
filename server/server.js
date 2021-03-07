@@ -4,8 +4,11 @@ const app = express();
 
 dotenv.config();
 
-app.get("/", (req, res) => {
-    res.send("API is running... hi");
+app.get("/api", (req, res) => {
+    res.send("API is running...from api route");
+});
+app.get("/api/test", (req, res) => {
+    res.send("API is running.. test route");
 });
 
 const PORT = process.env.PORT || 5000;
